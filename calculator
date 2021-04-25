@@ -1,1 +1,37 @@
+def add(x,y):
+    return x+y
+def subtract(x,y):
+    return x-y
+def multiply(x,y):
+    return x*y
+def divide(x,y):
+    return x/y
+
+
+# input option
+print("select operation")
+print("1.add")
+print("2.subtract")
+print("3.multiply")
+print("4.divide")
+
+
+# check if the optoion
+choice = (input( "enter 1/2/3/4") )
+
+if choice in ("1","2","3","4" ):
+    num_1=float(input("enter your first number"))
+    num_2=float(input("enter your second number"))
+if choice == "1":
+
+    print(add(num_1,num_2))
+if choice == "2":
+
+    print(subtract(num_1,num_2))
+if  choice == "3":
+
+    print(multiply(num_1, num_2))
+if choice == "4":
+
+    print(divide(num_1,num_2))
 
